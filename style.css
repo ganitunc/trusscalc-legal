@@ -100,14 +100,28 @@ a { color: var(--accent); overflow-wrap: anywhere; }
   color: var(--muted);
 }
 
+/* Apple's badge, unchanged: at least 40 px high on screen, clear space of a
+   quarter of its height on every side (12 px at 48 px). */
 .store {
-  display: inline-block;
   margin: 8px 0 24px;
-  padding: 10px 16px;
-  border: 1px dashed var(--line);
-  border-radius: 10px;
-  background: var(--surface);
-  color: var(--muted);
+}
+
+.store .badge {
+  display: inline-block;
+  padding: 12px;
+  margin: -12px;
+  line-height: 0;
+}
+
+.store .badge img {
+  display: block;
+  width: 144px;
+  height: 48px;
+}
+
+.store p {
+  margin: 20px 0 0;
+  font-size: 0.95rem;
 }
 
 .note {
