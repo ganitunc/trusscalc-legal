@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fachwerk berechnen mit Rechenweg – Stabkräfte, Knotenpunktverfahren, Ritterschnitt | TrussCalc</title>
+  <meta name="description" content="Ebenes Fachwerk zeichnen und Stabkräfte berechnen: Nullstäbe, Knotenpunktverfahren, Cremonaplan und Ritterschnitt als Lösungsweg. App für iPhone und iPad.">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="page">
+      <a href="./"><img src="../icon.png" alt="" width="36" height="36">TrussCalc</a>
+      <a class="lang" href="../" hreflang="en" lang="en">English</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1>Fachwerk berechnen – mit Rechenweg</h1>
+
+    <p class="lead">Zeichne die Knoten und Stäbe auf dem Raster, setze ein Festlager und ein Loslager, trage die
+    Knotenlasten ein und tippe auf „Berechnen“. Zugstäbe erscheinen blau, Druckstäbe rot, die Stabkräfte stehen an
+    den Stäben.</p>
+
+    <div class="shots">
+      <img src="bilder/03-fachwerk.jpg" width="660" height="1434" alt="TrussCalc auf dem iPhone: ein Fachwerkturm mit Zug- und Druckstäben">
+      <img src="beispiele/pratt-fachwerk-s5.png" width="1200" height="1697" alt="Seite aus dem Lösungsweg: Knotenpunktverfahren mit Freikörperbildern">
+    </div>
+
+    <h2>So rechnet TrussCalc ein Fachwerk vor</h2>
+    <ol>
+      <li><strong>Statische Bestimmtheit:</strong> n = s + a − 2k mit den Zahlen deines Systems</li>
+      <li><strong>Auflagerreaktionen:</strong> Momentengleichgewicht um ein Lager, dann ΣV und ΣH, mit Kontrolle um
+      das zweite Lager</li>
+      <li><strong>Nullstäbe:</strong> nach den beiden Regeln, mit Skizze</li>
+      <li><strong>Knotenpunktverfahren:</strong> Knoten für Knoten mit Freikörperbild, ΣH = 0 und ΣV = 0</li>
+      <li><strong>Cremonaplan:</strong> Lageplan und maßstäblicher Kräfteplan</li>
+      <li><strong>Ritterschnitt:</strong> Schnitt durch drei Stäbe, Momentengleichgewicht um die Ritterpunkte (sind
+      zwei der Stäbe parallel, das Kräftegleichgewicht quer zu ihnen)</li>
+      <li><strong>Verschiebung:</strong> die größte Knotenverschiebung mit dem Arbeitssatz (Prinzip der virtuellen
+      Kräfte)</li>
+    </ol>
+    <p>Knotenpunktverfahren und Ritterschnitt gibt es für statisch bestimmte Fachwerke mit drei Auflagerkräften, den
+    Cremonaplan für statisch bestimmte Fachwerke; ist ein Schritt bei deinem System nicht möglich, steht im
+    Lösungsweg, warum.</p>
+
+    <h3>Beispiel als PDF: <a href="beispiele/pratt-fachwerk.pdf">Pratt-Fachwerkbrücke, 18 m Spannweite</a></h3>
+    <div class="pages">
+      <figure>
+        <a href="beispiele/pratt-fachwerk.pdf"><img src="beispiele/pratt-fachwerk-s7.png" width="1200" height="1697" alt="Seite 7: Cremonaplan"></a>
+        <figcaption>Cremonaplan</figcaption>
+      </figure>
+      <figure>
+        <a href="beispiele/pratt-fachwerk.pdf"><img src="beispiele/pratt-fachwerk-s9.png" width="1200" height="1697" alt="Seite 9: Rittersches Schnittverfahren"></a>
+        <figcaption>Ritterschnitt</figcaption>
+      </figure>
+    </div>
+
+    <h2>In der App enthaltene Fachwerk-Beispiele</h2>
+    <p>Pratt-Fachwerkbrücke, Warren-Fachwerkbrücke, Polonceau-Dachbinder, Kragfachwerk, K-Fachwerkbrücke – zum
+    Öffnen, Berechnen und Verändern.</p>
+
+    <div class="store">
+      <a class="badge" href="https://apps.apple.com/de/app/id6832358090">
+        <img src="../app-store-badge.svg" width="144" height="48" alt="Download on the App Store">
+      </a>
+      <p><a href="https://apps.apple.com/de/app/id6832358090">TrussCalc im App Store</a></p>
+    </div>
+
+    <div class="note">
+      <p><strong>Nur zum Lernen.</strong> TrussCalc ist ein Lernwerkzeug. Prüfe die Ergebnisse immer von Hand oder
+      mit anderer Software. Die App ersetzt keine Tragwerksplanung.</p>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="page">
+      <nav><a href="./">Start</a> · <a href="fachwerk.html">Fachwerk</a> · <a href="rahmen.html">Rahmen und Träger</a>
+      · <a href="cremonaplan.html">Cremonaplan</a> · <a href="../imprint.html">Kontakt &amp; Impressum</a>
+      · <a href="../privacy.html">Datenschutz</a> (englisch)</nav>
+    </div>
+  </footer>
+</body>
+</html>

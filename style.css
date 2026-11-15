@@ -170,3 +170,50 @@ footer.site .page {
 }
 
 footer.site a { color: var(--text); }
+
+/* German landing pages (de/): pictures of the app and of sample reports. */
+header.site .lang {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+img { max-width: 100%; height: auto; }
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0 24px;
+}
+
+.shots.single { grid-template-columns: minmax(0, 22rem); justify-content: center; }
+
+.shots img, .pages img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.pages img { border-radius: 4px; background: #ffffff; }
+
+.pages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 16px;
+  margin: 16px 0 24px;
+}
+
+figure { margin: 0; }
+
+figcaption {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+ol { margin: 0 0 14px; padding-left: 1.5em; }
+
+footer.site nav a { white-space: nowrap; }

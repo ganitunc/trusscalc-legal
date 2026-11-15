@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schnittgrößen berechnen: M-, Q- und N-Linie für Träger und Rahmen | TrussCalc</title>
+  <meta name="description" content="Einfeldträger, Durchlaufträger, Gerberträger und Rahmen berechnen: Auflagerreaktionen, Schnittgrößen, Zustandslinien, Durchbiegung und Spannungen – mit Rechenweg.">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="page">
+      <a href="./"><img src="../icon.png" alt="" width="36" height="36">TrussCalc</a>
+      <a class="lang" href="../" hreflang="en" lang="en">English</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1>Schnittgrößen an Trägern und Rahmen</h1>
+
+    <p class="lead">Einfeldträger, Kragträger, Durchlaufträger, Gerberträger, Dreigelenkrahmen, eingespannte Rahmen,
+    Bögen: Zeichne das System, wähle ein Profil (IPE, HEA, HEB, HEM) oder gib den Querschnitt mit seinen Maßen ein,
+    und lies die Zustandslinien ab. Das Moment ist auf der Zugseite angetragen, die gestrichelte Faser ist
+    eingezeichnet.</p>
+
+    <div class="shots">
+      <img src="bilder/01-zeichnen-loesen.jpg" width="660" height="1434" alt="TrussCalc auf dem iPhone: ein Rahmen mit seiner Momentenlinie">
+      <img src="bilder/05-spannungen.jpg" width="660" height="1434" alt="TrussCalc auf dem iPhone: Normal- und Schubspannungen im Querschnitt">
+    </div>
+
+    <h2>Was du bekommst</h2>
+    <ul>
+      <li>Auflagerreaktionen, auch Einspannmomente</li>
+      <li>M-, Q- und N-Linie mit Nullstellen und Extremwerten von M</li>
+      <li>Verformungsfigur und Durchbiegung</li>
+      <li>Spannungen σ(z) und τ(z) im Querschnitt an jeder Stelle eines Stabes (für Profile und für Querschnitte, die
+      mit ihren Maßen eingegeben sind)</li>
+      <li>Gelenke, Einzellasten, Einzelmomente, Gleichstrecken-, Dreieck-, Trapez- und Parabellasten</li>
+      <li>Mit Pro: Lastfälle G und Q mit Kombinationen wie 1,35G + 1,50Q, Eigengewicht, Bögen</li>
+    </ul>
+
+    <h2>Der Lösungsweg</h2>
+    <p>Auflagerreaktionen Schritt für Schritt (bei statisch bestimmten Systemen mit drei Auflagerkräften und ohne
+    Gelenke; sonst aus der Steifigkeitsberechnung, mit vollständiger Kontrolle), Schnittgrößen stabweise als
+    Funktionen N(x), Q(x), M(x), die Zustandslinien untereinander, die Biegelinie aus EI·v″ = M, zweimal integriert.
+    Statisch unbestimmte gerade Träger (waagerecht, EI konstant, bis dreifach unbestimmt) werden mit dem
+    Kraftgrößenverfahren gerechnet, die Formänderungswerte mit der Integraltafel, wenn die Momentenflächen in der
+    Tafel stehen. Passt der Träger zu einem Fall der Balkentabelle, steht der Vergleich dabei.</p>
+
+    <h3>Beispiele als PDF: <a href="beispiele/durchlauftraeger.pdf">Zweifeldträger</a> ·
+    <a href="beispiele/dreigelenkrahmen.pdf">Dreigelenkrahmen</a></h3>
+    <div class="pages">
+      <figure>
+        <a href="beispiele/durchlauftraeger.pdf"><img src="beispiele/durchlauftraeger-s2.png" width="1200" height="1697" alt="Zweifeldträger, Seite 2: Kraftgrößenverfahren"></a>
+        <figcaption>Zweifeldträger: Kraftgrößenverfahren</figcaption>
+      </figure>
+      <figure>
+        <a href="beispiele/durchlauftraeger.pdf"><img src="beispiele/durchlauftraeger-s4.png" width="1200" height="1697" alt="Zweifeldträger, Seite 4: Zustandslinien"></a>
+        <figcaption>Zweifeldträger: Zustandslinien</figcaption>
+      </figure>
+      <figure>
+        <a href="beispiele/dreigelenkrahmen.pdf"><img src="beispiele/dreigelenkrahmen-s1.png" width="1200" height="1697" alt="Dreigelenkrahmen, Seite 1: System"></a>
+        <figcaption>Dreigelenkrahmen: System</figcaption>
+      </figure>
+      <figure>
+        <a href="beispiele/dreigelenkrahmen.pdf"><img src="beispiele/dreigelenkrahmen-s4.png" width="1200" height="1697" alt="Dreigelenkrahmen, Seite 4: Zustandslinien"></a>
+        <figcaption>Dreigelenkrahmen: Zustandslinien</figcaption>
+      </figure>
+    </div>
+
+    <div class="store">
+      <a class="badge" href="https://apps.apple.com/de/app/id6832358090">
+        <img src="../app-store-badge.svg" width="144" height="48" alt="Download on the App Store">
+      </a>
+      <p><a href="https://apps.apple.com/de/app/id6832358090">TrussCalc im App Store</a></p>
+    </div>
+
+    <div class="note">
+      <p><strong>Nur zum Lernen.</strong> TrussCalc ist ein Lernwerkzeug. Prüfe die Ergebnisse immer von Hand oder
+      mit anderer Software. Die App ersetzt keine Tragwerksplanung.</p>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="page">
+      <nav><a href="./">Start</a> · <a href="fachwerk.html">Fachwerk</a> · <a href="rahmen.html">Rahmen und Träger</a>
+      · <a href="cremonaplan.html">Cremonaplan</a> · <a href="../imprint.html">Kontakt &amp; Impressum</a>
+      · <a href="../privacy.html">Datenschutz</a> (englisch)</nav>
+    </div>
+  </footer>
+</body>
+</html>
