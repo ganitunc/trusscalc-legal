@@ -208,6 +208,23 @@ img { max-width: 100%; height: auto; }
 
 figure { margin: 0; }
 
+/* The App Store preview video: portrait, no autoplay, loaded only when played. */
+.video {
+  max-width: 18rem;
+  margin: 20px auto 24px;
+}
+
+.video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.video figcaption { text-align: center; }
+
 figcaption {
   margin-top: 6px;
   font-size: 0.9rem;
